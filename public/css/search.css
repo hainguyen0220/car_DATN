@@ -1,0 +1,121 @@
+.content__popup{
+    position: relative;
+}
+.content__popup .content__slider{
+    position: absolute;
+    top: 0;
+}
+.content__search{
+    width: 100vw;
+}
+
+.content__search-path{
+    width: 100%;
+    height: 50px;
+    background-color:#E8E7E7;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    text-decoration: none;
+    line-height: 50px;
+}
+.content__search-path__link{
+    color:var(--text-color);
+    text-decoration: none;
+    padding-right: 20px;
+
+}
+.content__search-path__icon{
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding-right: 20px;
+
+}
+.content__search-path__number{
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-right: 5px;
+
+}
+.content__search-path__text{
+    font-size: 1.3rem;
+
+}
+.content__search-products-wrap{
+    background-color: #EFEFEF;
+}
+.content__search-products{
+    width: 90%;
+
+}
+.content__search-products-header{
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 38px;
+    margin: 0;
+    padding: 5px 0;
+}
+.content__search-products-number{
+    padding-right: 5px;
+
+}
+.content__search-product-container{
+    background-color: #fff;
+    width: 90%;
+    margin-bottom: 20px;
+    
+}
+.content__search-product-sort{
+    padding: 20px 15px;
+    font-size: 1.4rem;
+}
+.content__search-product-sort__text{
+    padding-right: 20px;
+
+}
+.content__search-product-sort__btn{
+    border:none ;
+    outline: none;
+    height: 32px;
+    background-color: #fff;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 4px;
+}
+.content__search-product{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 15px 10px;
+}
+.content__product-pages{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-bottom: 50px;
+}
+.content__product-pages__btn{
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #e7e5e5;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--text-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+.content__product-pages__btn:hover{
+    background-color: #e2e0e0;
+}
+
+.content__search-tree{
+    margin-top: 58px;
+    width: 10%;
+    font-size: 1.4rem;
+    position: relative;
+    left: -80px;
+}

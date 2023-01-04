@@ -1,0 +1,38 @@
+version: '2'
+
+services:
+  mysql:
+    image: docker.io/bitnami/mysql:8.0
+    environment:
+      # ALLOW_EMPTY_PASSWORD is recommended only for development.
+      - ALLOW_EMPTY_PASSWORD=yes
+      - MYSQL_USER=root
+      - MYSQL_DATABASE=final_kaopiz
+  myapp:
+    image: docker.io/bitnami/laravel:9
+    ports:
+      - '8000:8000'
+    environment:
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_USERNAME=root
+      - DB_DATABASE=final_kaopiz
+    volumes:
+      - './:/app'
+
+    # command: /bin/bash -c "
+    #   composer install &&
+    #   php artisan migrate &&
+    #   php artisan config:clear &&
+    #   php artisan config:cache &&
+    #   php artisan db:seed --class=DatabaseSeeder &&
+    #   php artisan db:seed --class=AccountSeeder &&
+    #   php artisan db:seed --class=AuthorSeeder &&
+    #   php artisan db:seed --class=GaraSeeder &&
+    #    php artisan db:seed --class=CategorySeeder &&
+    #   php artisan db:seed --class=BookSeeder &&
+    #   php artisan storage:link &&
+    #   php artisan serve&&
+    #   php artisan schedule:work"
+    depends_on:
+      - mysql

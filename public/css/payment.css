@@ -1,0 +1,480 @@
+body{
+    overflow:hidden; 
+}
+.payment{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.payment__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position:absolute;
+    top: 0;left: 0;
+    bottom: 0;right: 0;
+   
+}
+.payment__container-left{
+    background-color: #fff;
+    flex:8;
+    height: 100%;
+    border-right: 1px solid #eaeaea;
+
+}
+.payment_method__container-left-wrap,
+.payment__container-left-wrap {
+    width: 100%;
+    height: 100%;
+    padding: 60px 60px 0 200px;
+
+
+}
+.payment__container-left__heading--top{
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #333;
+}
+.payment__container-left__path{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #333;
+}
+.payment__container-left__path-link:first-child,
+.payment__container-left__path-link:last-child{
+    text-decoration: none;
+    color:#338dbc;
+}
+.payment__container-left__path-link{
+    text-decoration: none;
+    padding-right: 10px;
+    color:#333;
+}
+.payment__container-left__path-icon{
+    padding-right: 10px;
+    color:rgb(95, 93, 93);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.payment__container-left__heading{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.payment__container-left__form{
+    width: 100%;
+    padding: 5px;
+}
+input, select {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    outline-color:#338dbc;
+    outline-width: thick  ;
+    border-radius:4px;
+    padding: 5px 10px;
+    font-size: 1.4rem;
+   
+}
+.payment__container-left__input-name{
+
+}
+.payment__container-left__input-info,
+.payment__container-left__select-info{
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.payment__container-left__input-email{
+    flex:2;
+    margin-right: 10px;
+
+}
+.payment__container-left__input-phone{
+    flex:1;
+
+}
+
+
+
+.payment__container-left__select-conscious{
+    flex:1;
+    margin-right: 5px;
+
+}
+
+.payment__container-left__select-district{
+    flex:1;
+    margin-left: 5px;
+
+}
+.payment__container-left__btn-wrap{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.payment__container-left__link--cart{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color:#338dbc;
+    height: 56px;
+    line-height: 56px;
+}
+.btn-payment{
+    height: 56px;
+    background-color:#286f94;
+    max-width: 300px;
+}
+.btn-payment:hover{
+     background: #338dbc;
+}
+.payment__container-right{
+    background-color: #FAFAFA;
+    flex:6;
+    height: 100%;
+}
+.payment__container-right-wrap{
+    width: 100%;
+    height: 100%;
+    padding: 60px 200px 0 44px;
+}
+.payment__container-right__header{
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e1e1e1;
+
+}
+.payment__container-right__header-left{
+    display: flex;
+   
+}
+.payment__container-right__header-left__img{
+    min-width: 65px;
+    height: 65px;
+    border-radius:4px;
+    border: 2px solid #e6e6e6;
+    position: relative;
+}
+.payment__container-right__header-left__img img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius:4px;
+}
+.payment__container-right__header-left__number{
+    position: absolute;
+    background-color: #A3A3A3;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right:0 ;
+    top: 0;
+    transform: translateY(-50%) translateX(50%);
+    color: #fff; 
+}
+.payment__container-right__header-left__number span{
+    font-size: 1.3rem;
+    font-weight: 500;
+
+}
+.payment__container-right__header-left__name{
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    line-height: 1.8rem;
+    font-weight: 500;
+}
+.payment__container-right__header-left__name span{
+    color: var(--text-color);
+}
+
+.payment__container-right__header-right{
+    display: flex;
+    align-items:center;
+    padding-left: 50px;
+
+}
+.payment__container-right__header-right__price{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 7px;
+}
+.payment__container-right__header-right__price span{
+    font-size: 1rem;
+    text-decoration: underline;
+    position: absolute;
+    right: -7px;
+    top: -10%;
+}
+.payment__container-right__form{
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+.payment__container-right__form-input-wrap{
+    flex: 1;
+    padding-right: 15px;
+}
+.payment__container-right__form-btn {
+
+}
+.btn__voucher--submit{
+    color: var(--white-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    height:45px;
+    line-height: 1.6rem;
+    border-radius: 4px;
+    outline: none;
+    padding:0 12px;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100px;
+    background-color: #C8C8C8;
+}
+
+
+.payment__container-right__transport{
+    padding:20px 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+.payment__container-right__transport-price{
+    display: flex;
+    font-size: 1.4rem;
+    color:var(--text-color);
+    justify-content: space-between;
+    align-items: center;
+}
+.payment__container-right__transport-price--product{
+    position: relative;
+    margin-right: 7px;
+   
+}
+.payment__container-right__transport-price__text{
+    margin: 10px 0;
+}
+.payment__container-right__transport-price--product span{
+    position: absolute;
+    font-size: 1rem;
+    text-decoration: underline;
+    top: -10%;
+    right: -7px;
+}
+.payment__container-right__transport-price--ship i {
+    color: rgb(116, 114, 114);
+    font-size: 1.2rem;
+}
+.payment__container-right__total{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 25px;
+}
+.payment__container-right__total-text{
+    font-size: 1.7rem;
+    color:var(--text-color);
+}
+.payment__container-right__total-price-wrap{
+
+}
+.payment__container-right__total-currency{
+    font-size: 1.2rem;
+    text-transform:uppercase;
+    margin-right: 5px;
+    color: #969696;
+}
+.payment__container-right__total-price{
+    font-size: 2.4rem;
+    position: relative;
+}
+.payment__container-right__total-price span{
+    position: absolute;
+    font-size: 1.6rem;
+    text-decoration: underline;
+    transform:translateY(-15%) translateX(25%);
+}
+
+.payment_method__container-left__form{
+    display: flex;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    justify-content:space-between;
+    padding: 20px ;
+    margin-top: 20px;
+}
+.payment_method__container-left__form-method--ship{
+    display: flex;
+    font-size: 1.5rem;
+    color:var(--text-color);
+}
+.select1 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .select1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .select1:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .select1 input:checked ~ .checkmark {
+    background-color: #338dbc;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .select1 input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .select1 .checkmark:after {
+      top: 40%;
+      left:40%;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: white;
+  }
+
+ 
+  .payment_method__container-left__form-price--ship{
+      font-size: 1.5rem;
+      color:var(--text-color);
+      position: relative;
+  }
+  .payment_method__container-left__form-price--ship span{
+    font-size: 0.9rem;
+    text-decoration: underline;
+    position: absolute;
+    transform: translateY(-15%);
+    left: 10px;
+    color:var(--text-color);
+}
+.payment_method__container-left__form-method--ship-text{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.select2 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .select2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .select2:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .select2 input:checked ~ .checkmark {
+    background-color: #338dbc;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .select2 input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .select2 .checkmark:after {
+      top: 40%;
+      left:40%;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: white;
+  }
+.payment_method__container-left__form-wrap{
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+.payment_method__container-left__form-method--ship-img{
+    margin-right: 10px;
+}
+.payment_method__container-left__form-method--ship__detail{
+    background-color: #FAFAFA;
+    padding:40px 35px 25px 40px;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    color:var(--text-color);
+    text-align:center;
+}

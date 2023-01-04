@@ -1,0 +1,24 @@
+/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-image: url("bg_01.jpg");
+background-size: cover;
+background-position-y: -200px;
+background-repeat: no-repeat;
+height: 80%;
+font-family: 'Numans', sans-serif;
+}
+
+.card{
+    padding-top: 50px;
+    padding-right: 50px;
+
+    /* margin: 100px; */
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: rgba(25, 27, 27, 0.5) !important;
+    }

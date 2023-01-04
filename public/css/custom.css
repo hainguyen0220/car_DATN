@@ -1,0 +1,256 @@
+body {
+    background: rgb(4, 38, 46);
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #ba68c8;
+}
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none;
+}
+.profile-button:hover {
+    background: #682773;
+}
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none;
+}
+.profile-button:active {
+    background: #682773;
+    box-shadow: none;
+}
+.back:hover {
+    color: #682773;
+    cursor: pointer;
+}
+.labels {
+    font-size: 11px;
+}
+.add-experience:hover {
+    background: #ba68c8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #ba68c8;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+.mb-3 {
+    margin-bottom: -1rem;
+}
+
+h3 {
+    font-size: 2.3rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+.text {
+    font-size: 1.5rem;
+}
+
+.info-body {
+    min-height: 100vh;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.navbar {
+    width: 20%;
+    padding: 0;
+}
+
+.navbar-list {
+    margin-top: 50px;
+    list-style: none;
+    font-size: 1.8rem;
+}
+.navbar-list-child {
+    padding-left: 30px;
+    list-style: none;
+    font-size: 1.6rem;
+}
+.navbar-item {
+    margin-top: 20px;
+    margin-left: -30px;
+}
+.navbar-item i {
+    margin-right: 5px;
+}
+
+.content-cus {
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 600px;
+    border-radius: 4px;
+    padding: 20px 40px;
+}
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+.content-cus .border-bottom {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #ccc;
+}
+.content-cus .border-bottom .header {
+    font-size: 2.5rem;
+}
+
+.body {
+    margin-top: 20px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    font-size: 1.5rem;
+    align-items: center;
+    width: 50%;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 50%;
+}
+.form-control {
+    height: 40px;
+    padding: 10px;
+    width: 300px;
+    padding-right: 20px;
+}
+
+.col-2 {
+    width: 30%;
+}
+.col-cusluon{
+    padding-left: 50px;
+}
+.avatar {
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+.alert {
+    position: relative;
+    padding: 2rem 2rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 1.6rem;
+    width: 60%;
+}
+.alert-success {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+}
+
+.alert-danger {
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+}
+.danger {
+    padding-top: 20px;
+    color: #e31627;
+    font-size: 1.5rem;
+}
+.success {
+    padding-top: 20px;
+    color: #198754;
+    font-size: 1.5rem;
+}
+.primary {
+    padding-top: 20px;
+    color: #0d6efd;
+    font-size: 1.5rem;
+}
+.alert-info {
+    color: #055160;
+    background-color: #cff4fc;
+    border-color: #b6effb;
+}
+
+.body .top h5,
+.body .bottom h5 {
+    font-size: 2rem;
+}
+.body .top {
+    border-bottom: 1px solid #ccc;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
+    justify-content: flex-end;
+    padding: 20px 0;
+}
+.pagination li {
+    padding: 0 3px;
+}
+.page-link {
+    width: 40px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    height: 40px;
+    line-height: 1.6rem;
+    border-radius: 50%;
+    outline: none;
+    padding: 0 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#customers {
+    border-collapse: collapse;
+    width: 80%;
+    font-size: 1.5rem;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 16px;
+    text-align: center;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    border-bottom: 2px solid #ccc;
+}
+
+.car_not_found {
+    color: red;
+    font-size: 1.5rem;
+    padding-right: 20px;
+}
